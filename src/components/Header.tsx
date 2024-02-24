@@ -18,8 +18,8 @@ export default function Header() {
   }, [balance]);
 
   return (
-    <div className="bg-slate-500 py-4 px-4 w-full flex flex-row justify-between items-center">
-      <Link href="/"><p className="text-2xl">Taiwan Trade DAO</p></Link>
+    <div className=" py-4 px-4 w-full flex flex-row justify-between items-center">
+      <Link href="/"><p className="text-2xl">SDG 眾籌平台</p></Link>
       
         <Link href="/content">
               Content {/* 選單項目指向 Content 頁面 */}

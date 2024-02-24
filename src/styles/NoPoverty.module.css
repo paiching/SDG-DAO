@@ -2,7 +2,8 @@
 .content {
   max-width: 600px; /* Facebook posts are usually around this width */
   margin: auto; /* Center the content */
-
+  display: flex;
+  flex-direction: column;
 }
 
 .proposal-wall {
@@ -38,3 +39,9 @@
 }
 
 /* Add styles for other elements as needed */
+/* NoPoverty.module.css */
+
+
+.headerSection {
+  display: flex;
+}
