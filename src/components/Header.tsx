@@ -7,7 +7,7 @@ import Link from "next/link";
 export default function Header() {
   const { address } = useAccount();
   const { data: balance } = useBalance({
-    addressOrName: address,
+    address: address,
   });
   const [balanceDec, setBalanceDec] = useState(new Decimal(0));
 
