@@ -45,7 +45,7 @@ const ProposalForm = () => {
     }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: { preventDefault: () => void; }) => {
     e.preventDefault();
     console.log(formData);
     // 这里可以添加将表单数据发送到服务器的代码
@@ -95,14 +95,14 @@ const ProposalForm = () => {
             type="date"
             name="proposalStartDate"
             value={formData.proposalStartDate}
-            onChange={handleInputChange}
+            onChange={handleInputChangeEvent}
             className={styles.input}
           />
           <input
             type="date"
             name="proposalEndDate"
             value={formData.proposalEndDate}
-            onChange={handleInputChange}
+            onChange={handleInputChangeEvent}
             className={styles.input}
           />
         </div>

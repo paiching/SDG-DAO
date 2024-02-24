@@ -1,7 +1,11 @@
 import React from 'react';
-import styles from './SearchComponent.module.scss'; // Make sure to define styles for your search component
+import styles from './SearchComponent.module.css';
 
-const SearchComponent = ({ onChange }) => {
+interface SearchComponentProps {
+  onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
+}
+
+const SearchComponent: React.FC<SearchComponentProps> = ({ onChange }) => {
   return (
     <input
       type="text"
