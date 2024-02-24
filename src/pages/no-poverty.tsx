@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import Proposal from '../components/Proposal';
+import Proposal, { ProposalType } from '../components/Proposal';
 import Card from '@/components/Card';
 import styles from '../styles/NoPoverty.module.scss'; // Ensure you have the corresponding CSS module file
 import ProposalForm from '@/components/ProposalForm';
 import SearchComponent from '@/components/SearchComponent';
 
 const NoPovertyPage: React.FC = () => {
-  const [proposals, setProposals] = useState([]);
+  const [proposals, setProposals] = useState<ProposalType[]>([]); // 注意 ProposalType 沒引入使用會報錯
   const [visibleProposals, setVisibleProposals] = useState(5);
   const [proposalForm, setProposalForm] = useState({ title: '', description: '' });
   const [searchTerm, setSearchTerm] = useState('');
