@@ -23,18 +23,14 @@ const NoPovertyPage: React.FC = () => {
     setVisibleProposals((prevValue) => prevValue + 5);
   };
 
-  const handleFormChange = (e) => {
-    const { name, value } = e.target;
-    setProposalForm(prevForm => ({ ...prevForm, [name]: value }));
-  };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: { preventDefault: () => void; }) => {
     e.preventDefault();
     // Handle form submission logic here
     console.log(proposalForm);
   };
 
-  const handleSearchChange = (e) => {
+  const handleSearchChange = (e: { target: { value: string; }; }) => {
     setSearchTerm(e.target.value.toLowerCase());
   };
 
