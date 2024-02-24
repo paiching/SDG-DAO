@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 import Proposal, { ProposalType } from '../components/Proposal';
 import styles from '../styles/NoPoverty.module.css';
 import Card from '@/components/Card';
+import ProposalForm from '@/components/ProposalForm';
 
 const NoPovertyPage: React.FC = () => {
   const [proposals, setProposals] = useState<ProposalType[]>([]);
@@ -64,30 +65,7 @@ const NoPovertyPage: React.FC = () => {
       </div>
       
       {tab === 'form' ? (
-        <form onSubmit={handleSubmit} className={styles.form}>
-          <div className={styles.formGroup}>
-            <label htmlFor="title" className={styles.label}>Title</label>
-            <input
-              id="title"
-              type="text"
-              name="title"
-              value={proposalForm.title}
-              onChange={handleFormChange}
-              className={styles.input}
-            />
-          </div>
-          <div className={styles.formGroup}>
-            <label htmlFor="description" className={styles.label}>Description</label>
-            <textarea
-              id="description"
-              name="description"
-              value={proposalForm.description}
-              onChange={handleFormChange}
-              className={styles.textarea}
-            />
-          </div>
-          <button type="submit" className={styles.submitButton}>Submit</button>
-        </form>
+          <ProposalForm/>
       ) : (
         <div className={styles.proposalWall}>
           {proposals.slice(0, visibleProposals).map((proposal) => (
