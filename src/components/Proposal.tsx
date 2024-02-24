@@ -1,6 +1,6 @@
 // components/Proposal.tsx
 import React from 'react';
-import styles from '../styles/NoPoverty.module.css'; 
+import styles from '../styles/NoPoverty.module.scss'; 
 
 export type ProposalType = {
   id: string; 

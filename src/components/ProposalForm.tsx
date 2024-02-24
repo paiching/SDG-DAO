@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import styles from './ProposalForm.module.css'; // 导入CSS模块
+import styles from './ProposalForm.module.scss'; // 导入CSS模块
 
 const ProposalForm = () => {
   const [formData, setFormData] = useState({
