@@ -1,0 +1,19 @@
+/* Assuming you have a class for the card image in your Card component */
+.card-image {
+    background: url('/path/to/your/image.jpg') no-repeat center center;
+    background-size: cover;
+  }
+  
+  /* Style for the container of the Card and the info */
+  .card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* This centers the Card and info horizontally */
+  }
+  
+  /* Style for the info text below the Card */
+  .card-info {
+    text-align: center; /* This centers the text within the .card-info div */
+    margin: 10px;
+  }
+  

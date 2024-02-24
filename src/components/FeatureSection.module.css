@@ -1,0 +1,49 @@
+/* FeatureSection.module.css */
+.featureSection {
+    width: 100%; /* Use 100% instead of 100vw to avoid horizontal scroll */
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px 20px; /* Adjust padding as needed */
+    background: url('/sdgBG.jpg') no-repeat center center;
+    background-blend-mode: darken;
+    background-size: cover;
+    color: #fff; /* Adjust text color as needed */
+    overflow: hidden; /* Prevent any child elements from overflowing */
+    min-height: 400px; 
+  }
+  
+  .overlayContent {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* Ensure that there's no additional transform applied that might conflict */
+    font-size: 2rem; /* Adjust the size as needed */
+  }
+  
+  .overlayContent {
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity as needed */
+    color: white;
+    padding: 1rem; /* Add padding to create space around the text */
+    border-radius: 8px; /* Optional: for rounded corners */
+  }
+  
+  .overlayContent h1 {
+    font-size: 3rem; /* Larger font size for the heading */
+    margin-bottom: 0.5em; /* Space between the heading and paragraph */
+  }
+  
+  .overlayContent p {
+    font-size: 1.5rem; /* Larger font size for the paragraph */
+    margin-bottom: 1em; /* Space between the paragraph and the form */
+  }
+
+  .overlayContent h1, .overlayContent p {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+
+
+  

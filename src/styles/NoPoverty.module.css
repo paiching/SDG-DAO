@@ -1,0 +1,40 @@
+/* NoPoverty.module.css */
+.content {
+  max-width: 600px; /* Facebook posts are usually around this width */
+  margin: auto; /* Center the content */
+
+}
+
+.proposal-wall {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem; /* Space between posts */
+  margin-bottom: 2rem; /* Space at the bottom */
+}
+
+/* Style for each proposal to look like a Facebook post */
+.proposal {
+  background: white; /* Facebook posts are typically white */
+  border: 1px solid #ddd; /* Light grey border */
+  border-radius: 6px; /* Slightly rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  margin-bottom: 15px; /* Space between posts */
+  padding: 16px; /* Padding inside the post */
+}
+
+/* Style for the load more button */
+.myButton {
+  padding: 8px 16px;
+  border: 1px solid #ddd;
+  background-color: #f5f6f7; /* Facebook uses a grey background for buttons */
+  color: #4b4f56; /* Facebook's text color for buttons */
+  cursor: pointer;
+  border-radius: 6px; /* Rounded corners like Facebook buttons */
+  font-weight: bold;
+}
+
+.myButton:hover {
+  background-color: #ebedf0; /* Slightly darker grey on hover */
+}
+
+/* Add styles for other elements as needed */
