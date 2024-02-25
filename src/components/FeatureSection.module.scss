@@ -11,8 +11,16 @@
 }
 
 .contentTitle {
-  font-size: xx-large;
+  //font-size: xx-large;
+  font-size: 3em;
   font-weight: bolder;
+  color: #000000; /* Text color */
+}
+
+.minted {
+  //font-size: xx-large;
+  font-size: 1.5em;
+  font-weight: 300;
   color: #000000; /* Text color */
 }
 
@@ -42,6 +50,9 @@
   }
 }
 
+.mtop10px {
+   margin-top: 10px;
+}
 /* Add any additional styles and media queries as needed */
 
 

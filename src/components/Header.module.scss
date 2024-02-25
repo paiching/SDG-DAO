@@ -1,8 +1,12 @@
 .header {
-  display: flex;
-  justify-content: space-between;
-  padding: 16px 32px;
-  background: white; // Adjust to your header background
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 32px;
+    background: white; /* Adjust to your header background */
+    position: sticky; /* Make the header sticky */
+    top: 0; /* Position it at the top */
+    z-index: 1000; /* Ensure it's above other content */
+    /* Other styles remain the same */
   .nav {
     display: flex;
     align-items: center;
@@ -13,8 +17,10 @@
     .menuItems {
       display: flex;
       .menuItem {
+        
         position: relative;
         .link {
+        // font-weight: 600;
           padding: 8px 16px;
           cursor: pointer;
           &:hover {
@@ -52,4 +58,12 @@
       margin-right: 16px;
     }
   }
+}
+
+.logo{
+    font-weight: 900;    
+}
+
+.menu{
+    font-weight: 400;
 }
