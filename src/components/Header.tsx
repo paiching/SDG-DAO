@@ -23,34 +23,21 @@ export default function Header() {
     <div className={`${styles.header} py-4 px-4 w-full flex flex-row justify-between items-center`}>
       <div className={`${styles.nav} flex flex-row items-center gap-4`}>
         <Link href="/">
-          <div className={`${styles.logo} text-2xl cursor-pointer`}>SDG 眾籌平台</div>
+          <div className={`${styles.logo} text-2xl cursor-pointer`}>SDG 募資平台</div>
         </Link>
         <div className={`${styles.menuItem} relative flex`}>
-          <Link href="/explore">
-            <div className={`${styles.link} px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 cursor-pointer`}>探索</div>
+          <Link href="/no-poverty">
+            <div className={`${styles.link}  ${styles.menu} px-4 py-2 text-gray-700 hover:bg-gray-100 cursor-pointer`}>探索</div>
           </Link>
-          <div className={`${styles.menuItem} text-lg cursor-pointer`}
-               onMouseEnter={() => setIsMegaMenuOpen(true)}
-               onMouseLeave={() => setIsMegaMenuOpen(false)}>
-            <div className={`${styles.link} px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 cursor-pointer`}>提案</div>
-            {isMegaMenuOpen && (
-              <div className={`${styles.megaMenu} absolute z-10 grid grid-cols-4 bg-white shadow-lg`}
-                   onMouseEnter={() => setIsMegaMenuOpen(true)}
-                   onMouseLeave={() => setIsMegaMenuOpen(false)}>
-                {[...Array(17)].map((_, index) => (
-                  <div key={index} className="p-4">
-                    <Link href={`/proposal/${index + 1}`}>
-                      <div className="hover:text-blue-500 cursor-pointer">Proposal {index + 1}</div>
-                    </Link>
-                  </div>
-                ))}
-              </div>
-            )}
+     
+          <Link href="/explore">
+            <div className={`${styles.link}  ${styles.menu} px-4 py-2 text-gray-700 hover:bg-gray-100 cursor-pointer`}>提案</div>
+          </Link>
+          
+          <Link href="/explore">
+            <div className={`${styles.link} ${styles.menu} px-4 py-2  text-gray-700 hover:bg-gray-100 cursor-pointer`}>關於</div>
+          </Link>
           </div>
-          <Link href="/explore">
-            <div className={`${styles.link} px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 cursor-pointer`}>探索</div>
-          </Link>
-        </div>
       </div>
       <div className={`${styles.account} flex flex-row items-center gap-2`}>
         <p className={`${styles.balance}`}>Balance: {balanceDec.toFixed(2)}</p>

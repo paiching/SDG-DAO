@@ -24,16 +24,25 @@ const FeatureSection: React.FC = () => {
     <section className={styles.featureSection} style={{ backgroundImage: `url(${images[activeIndex]})` }}>
       <div className={styles.content}>
         <h1 className={styles.contentTitle }>SDG 行動幣募資</h1>
-        <p>97 / 5555  - SDG 發行</p>
-        <button className={styles.button}>鑄幣贊助</button>
-        <button className={styles.button}>馬上提案</button>
-        <p>完成任務並蒐集NFT成為行動達人</p>
-        <p>目前兌換 1 ETH : 30 SDG</p>
-        <p>           
-          <Link href="/explore">
-            <div className={`${styles.link} px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 cursor-pointer`}>了解更多</div>
-          </Link>
-        </p>
+        <div className='flex'>
+          <div className={styles.minted}>
+            <span>
+              <span className={styles.bolderGreen}>122</span> 件提案進行中 <span className={styles.bolder}>|
+              </span> 已完成 <span className={styles.bolderBlue}>15</span> 件目標 <span className={styles.bolder}>|
+              </span> 發行 <span className={styles.bolderOrange}>3,137</span> / 10,000,000  <span className={styles.bolder}>行動幣</span>
+            </span>
+          </div>
+        </div>
+        <div className={styles.mtop10px}><p>完成任務並解鎖NFT</p>
+          <div className={styles.mtop20px}>
+            <button className={styles.button}>鑄幣贊助</button>
+            <button className={styles.button}>我要提案</button>
+          </div>  
+        {/* <Link href="/explore">
+            <div className={`${styles.link} cursor-pointer`}>了解更多</div>
+          </Link> */}
+        </div>
+        {/* <p>目前兌換 1 ETH : 30 SDG</p> */}
       </div>
     </section>
   );

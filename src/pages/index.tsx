@@ -7,6 +7,7 @@ import FeatureSection from "@/components/FeatureSection";
 import CardGrid from "@/components/Grid";
 import Footer from "@/components/footer";
 import '@/components/footer.module.css';
+import '@/styles/Index.module.scss'
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,6 +18,7 @@ export default function Home() {
     >
       <FeatureSection />
       <section className="container mx-auto p-6">
+        <div className="centerTitle">點選目標提案</div>
         <CardGrid />
       </section>
       {/* <StickyForm /> */}

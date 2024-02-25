@@ -11,8 +11,51 @@
 }
 
 .contentTitle {
-  font-size: xx-large;
+  //font-size: xx-large;
+  font-size: 3em;
   font-weight: bolder;
+  color: #000000; /* Text color */
+}
+
+.bolder {
+  //font-size: xx-large;
+  font-size: 1em;
+  font-weight: 500;
+  color: #000000; /* Text color */
+}
+
+.bolderBlue {
+  //font-size: xx-large;
+  font-size: 1.2em;
+  font-weight: 500;
+  color: #0679d6; /* Text color */
+}
+
+.bolderGreen {
+  //font-size: xx-large;
+  font-size: 1.2em;
+  font-weight: 500;
+  color: #08ba05; /* Text color */
+}
+
+.bolderOrange {
+  //font-size: xx-large;
+  font-size: 1.2em;
+  font-weight: 500;
+  color: #ffa602; /* Text color */
+}
+
+.bolder {
+  //font-size: xx-large;
+  font-size: 1em;
+  font-weight: 500;
+  color: #000000; /* Text color */
+}
+
+.minted {
+  //font-size: xx-large;
+  font-size: 1.4em;
+  font-weight: 300;
   color: #000000; /* Text color */
 }
 
@@ -42,6 +85,12 @@
   }
 }
 
+.mtop10px {
+   margin-top: 10px;
+}
+.mtop20px {
+  margin-top: 20px;
+}
 /* Add any additional styles and media queries as needed */
 
 
