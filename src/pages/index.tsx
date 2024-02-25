@@ -19,7 +19,7 @@ export default function Home() {
       <section className="container mx-auto p-6">
         <CardGrid />
       </section>
-      <StickyForm />
+      {/* <StickyForm /> */}
       <div className="flex flex-col w-full h-full">
         {/* <Header /> */}
         {/* <MintCard /> */}

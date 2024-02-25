@@ -1,0 +1,58 @@
+/* FeatureSection.module.css */
+.featureSection {
+  width: 80%;
+  height: 400px; /* Fixed height as requested */
+  background-size: cover;
+  background-position: center;
+  transition: background-image 1s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Align content to the left */
+}
+
+.contentTitle {
+  font-size: xx-large;
+  font-weight: bolder;
+  color: #000000; /* Text color */
+}
+
+.content {
+  //font-weight: bolder;
+  margin-left: 10%; /* Adjust as needed */
+  color: #000000; /* Text color */
+}
+
+
+
+/* FeatureSection.module.css */
+.button {
+  background-color: transparent; /* Make the button background transparent */
+  color: #000000; /* Set the text color to white */
+  border: 3px solid #000000; /* Thick white border; adjust color as needed */
+  padding: 10px 20px;
+  margin-right: 10px; /* Space between buttons */
+  cursor: pointer;
+  transition: all 0.3s; /* Smooth transition for hover and other states */
+  font-weight: bold; /* Optional: if you want the text to be bold */
+
+  &:hover {
+    background-color: #009BD9; /* Replace with your button hover color */
+    border-color: #009BD9; /* Replace with your button hover border color */
+    color: #ffffff; /* Replace with your button hover text color */
+  }
+}
+
+/* Add any additional styles and media queries as needed */
+
+
+/* Add media queries for responsiveness */
+@media (max-width: 768px) {
+  .featureSection {
+    height: auto; /* Make height responsive */
+  }
+
+  .content {
+    margin-left: 5%; /* Adjust as needed for smaller screens */
+    text-align: center; /* Center content on smaller screens */
+  }
+}
