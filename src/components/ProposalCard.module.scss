@@ -1,0 +1,49 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 24px;
+    align-items: flex-start;
+  
+    img {
+        //height: 220px;
+        //width: 360px;
+        background-position: center;
+        background-size: cover; // This will cover the entire area of the div without stretching the image
+        border-radius: 4px; // To maintain consistency with the card border-radius
+    }
+  
+    .tag {
+      // Style for tag
+    }
+  
+    .description {
+      // Style for description
+      flex-grow: 1; // Allow description to fill the space so the progress bar is pushed to the bottom
+    }
+  
+    .funding {
+      // Style for funding text
+    }
+  
+    .progressContainer {
+      width: 100%;
+      background-color: #eee;
+      border-radius: 4px;
+      margin: 8px 0;
+  
+      .progressBar {
+        height: 10px;
+        background-color: #4caf50;
+        border-radius: 4px;
+      }
+    }
+  
+    .daysRemaining {
+      // Style for days remaining text
+    }
+  }
+  

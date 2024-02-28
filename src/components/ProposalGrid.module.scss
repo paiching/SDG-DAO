@@ -1,0 +1,28 @@
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    grid-auto-rows: minmax(100px, auto); // This ensures that each row has a minimum height but can grow as needed based on content
+  
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr; // On smaller screens, stack cards vertically
+    }
+  }
+  
+  .title {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .loadMoreButton {
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+    background-color: #f0f0f0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    // Additional styles...
+  }
+  
