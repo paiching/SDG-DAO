@@ -28,7 +28,11 @@ const wagmiConfig = createConfig({
   publicClient,
 });
 
+
 export default function App({ Component, pageProps }: AppProps) {
+
+
+
   return (
     <WagmiConfig config={wagmiConfig}>
         <RainbowKitProvider chains={chains}>

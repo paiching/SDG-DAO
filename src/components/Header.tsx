@@ -1,9 +1,10 @@
 import { ConnectButton } from "@rainbow-me/rainbowkit";
 import React, { useEffect, useState } from "react";
-import { useAccount, useBalance } from "wagmi";
+// import { useAccount, useBalance } from "wagmi";
 import Decimal from "decimal.js";
 import Link from "next/link";
 import styles from './Header.module.scss'; // Assuming you have an SCSS module for the Header
+import { useAccount, useBalance } from "wagmi";
 
 export default function Header() {
   const { address } = useAccount();
@@ -41,7 +42,7 @@ export default function Header() {
       </div>
       <div className={`${styles.account} flex flex-row items-center gap-2`}>
         <p className={`${styles.balance}`}>Balance: {balanceDec.toFixed(2)}</p>
-        <ConnectButton />
+       {/* <ConnectButton /> */}
       </div>
     </div>
   );

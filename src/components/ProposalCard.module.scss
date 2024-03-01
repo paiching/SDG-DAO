@@ -15,6 +15,8 @@
         background-size: cover; // This will cover the entire area of the div without stretching the image
         border-radius: 4px; // To maintain consistency with the card border-radius
     }
+
+ 
   
     .tag {
       // Style for tag
@@ -28,13 +30,40 @@
     .funding {
       // Style for funding text
     }
+
+    .proposerInfo {
+        display: flex;
+        align-items: center;
+        margin-bottom: 8px;
+    
+        .proposerIcon {
+          height: 32px; // Example size, adjust as needed
+          width: 32px; // Example size, adjust as needed
+          border-radius: 50%;
+          margin-right: 8px;
+        }
+    
+        .proposerName {
+          // Style for the proposer's name
+        }
+      }
   
     .progressContainer {
+      position: relative;
       width: 100%;
       background-color: #eee;
       border-radius: 4px;
       margin: 8px 0;
   
+      .progressPercentage {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        padding: 0 8px;
+        // Style for the progress percentage label
+      }
+      
       .progressBar {
         height: 10px;
         background-color: #4caf50;

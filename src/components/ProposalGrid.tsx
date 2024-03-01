@@ -10,6 +10,8 @@ interface Proposal {
   requiredFunding: string;
   progressPercentage: number;
   daysRemaining: number;
+  proposerIcon: string;
+  proposerName: string;
 }
 
 interface ProposalGridProps {

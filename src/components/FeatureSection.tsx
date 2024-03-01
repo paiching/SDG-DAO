@@ -4,8 +4,9 @@ import styles from './FeatureSection.module.scss';
 import Link from 'next/link';
 
 const images = [
-  '/feature-bg.png', // Replace with your image paths
-  '/feature-bg.png',
+  '/images/planet-earth.jpg', // Replace with your image paths
+  //'/images/river.jpg',
+  //'/images/sdg_icon.png',
   // ...add as many images as you like
 ];
 
@@ -15,21 +16,21 @@ const FeatureSection: React.FC = () => {
   useEffect(() => {
     const intervalId = setInterval(() => {
       setActiveIndex((current) => (current === images.length - 1 ? 0 : current + 1));
-    }, 3000); // Change image every 3 seconds
+    }, 5000); // Change image every 3 seconds
 
     return () => clearInterval(intervalId);
   }, []);
 
   return (
     <section className={styles.featureSection} style={{ backgroundImage: `url(${images[activeIndex]})` }}>
-      <div className={styles.content}>
-        <h1 className={styles.contentTitle }>SDG 行動幣募資</h1>
+      <div className={`${styles.content} ${styles.semiTransparentOverlay}`}>
+        <h1 className={styles.contentTitle }>SDG 募資行動計畫</h1>
         <div className='flex'>
           <div className={styles.minted}>
             <span>
               <span className={styles.bolderGreen}>122</span> 件提案進行中 <span className={styles.bolder}>|
               </span> 已完成 <span className={styles.bolderBlue}>15</span> 件目標 <span className={styles.bolder}>|
-              </span> 發行 <span className={styles.bolderOrange}>3,137</span> / 10,000,000  <span className={styles.bolder}>行動幣</span>
+              </span> 已發行 <span className={styles.bolderOrange}>3,137</span> / 1,000,000,000  <span className={styles.bolder}>USDGs</span>
             </span>
           </div>
         </div>

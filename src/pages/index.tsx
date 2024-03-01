@@ -10,6 +10,7 @@ import '@/components/footer.module.css';
 import '@/styles/Index.module.scss'
 import Proposal from "@/components/Proposal";
 import ProposalGrid from "@/components/ProposalGrid";
+import SDGsSection from "@/components/SDGsSections";
 
 const inter = Inter({ subsets: ["latin"] });
 // Sample proposals data
@@ -21,6 +22,8 @@ const proposals = [
     requiredFunding: 'NT$1,000,000',
     progressPercentage: 50,
     daysRemaining: 30,
+    proposerIcon: "/images/sdg_icon.png",
+    proposerName: "海洋保育基金會"
   },
   {
     image: '/images/corals-2.svg',
@@ -29,6 +32,8 @@ const proposals = [
     requiredFunding: 'NT$1,000,000',
     progressPercentage: 50,
     daysRemaining: 30,
+    proposerIcon: "/images/sdg_icon.png",
+    proposerName: "海洋保育基金會"
   },
   {
     image: '/images/corals-2.svg',
@@ -37,6 +42,8 @@ const proposals = [
     requiredFunding: 'NT$1,000,000',
     progressPercentage: 50,
     daysRemaining: 30,
+    proposerIcon: "/images/sdg_icon.png",
+    proposerName: "海洋保育基金會"
   },
   {
     image: '/images/corals-2.svg',
@@ -45,6 +52,8 @@ const proposals = [
     requiredFunding: 'NT$1,000,000',
     progressPercentage: 50,
     daysRemaining: 30,
+    proposerIcon: "/images/sdg_icon.png",
+    proposerName: "海洋保育基金會"
   },
   {
     image: '/images/corals-2.svg',
@@ -53,6 +62,8 @@ const proposals = [
     requiredFunding: 'NT$1,000,000',
     progressPercentage: 50,
     daysRemaining: 30,
+    proposerIcon: "/images/sdg_icon.png",
+    proposerName: "海洋保育基金會"
   },
   {
     image: '/images/corals-2.svg',
@@ -61,6 +72,8 @@ const proposals = [
     requiredFunding: 'NT$1,000,000',
     progressPercentage: 50,
     daysRemaining: 30,
+    proposerIcon: "/images/sdg_icon.png",
+    proposerName: "海洋保育基金會"
   }
   // ... more proposals
 ];
@@ -74,9 +87,9 @@ export default function Home() {
       <FeatureSection />
       <section className="container mx-auto p-6">
         {/* <div className="centerTitle">點選目標提案</div> */}
-
+        <SDGsSection/>
         <ProposalGrid proposals={proposals} />
-        <CardGrid />
+        {/* <CardGrid /> */}
       </section>
       {/* <StickyForm /> */}
       <div className="flex flex-col w-full h-full">
